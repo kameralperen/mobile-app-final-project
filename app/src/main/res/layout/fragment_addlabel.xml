@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/labelInput"
+        android:layout_width="340dp"
+        android:layout_height="69dp"
+        android:layout_above="@+id/descriptionInput"
+        android:layout_alignStart="@+id/descriptionInput"
+        android:layout_alignEnd="@+id/descriptionInput"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Etiket"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/descriptionInput"
+        android:layout_width="342dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/addButton"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="23dp"
+        android:hint="Açıklama"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/labelsListView"
+        android:layout_marginBottom="23dp"
+        android:text="Ekle" />
+
+    <ListView
+        android:id="@+id/labelsListView"
+        android:layout_width="match_parent"
+        android:layout_height="379dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="110dp"
+        android:fontFamily="sans-serif"
+        android:text="Etiket Ekle"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold|italic" />
+
+</RelativeLayout>
